@@ -1,52 +1,31 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
+int somme (int A , int B){
+    int S;
+    S = A + B ;
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+    return S;
+}
+int minimum (int A , int B){
+    int min;
+    if (A > B)
+        return B;
+    else
+        return A;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    return min;
+}
+int main()
+{
+    int A,B;
+    printf("entrer A : \n");
+    scanf("%d",&A);
+    printf("entrer B : \n");
+    scanf("%d",&B);
+    somme(A,B);
+    minimum (A,B);
+    printf("La somme de %d et %d est : %d\n",A,B,somme(A,B));
+    printf("Le minimum de %d et %d est : %d",A,B,minimum (A,B));
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    return 0;
+}
