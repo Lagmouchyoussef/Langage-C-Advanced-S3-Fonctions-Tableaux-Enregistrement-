@@ -1,5 +1,5 @@
-Advanced C Programming Language: 2nd Year [Semester 3] Series 1 (Function (function design), Array (dynamic with malloc), Record) 
-Series 1
+Advanced C Programming Language: 2nd Year [Semester 3] 
+Series 1 (Function (function design), Array (dynamic with malloc), Record) 
 Plan
 Exercise 1: Functions (function design)
 
